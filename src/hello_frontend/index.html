@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the world of Superman. Explore the legend of the Man of Steel, his story, allies, and battles.">
+    <title>Superman | Man of Steel</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #1c1c1c, #0e76a8);
+            color: white;
+        }
+        header {
+            background: url('https://example.com/superman-hero.jpg') no-repeat center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            animation: slideIn 2s ease-out;
+            color: #f80000;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+        }
+        header p {
+            font-size: 1.5rem;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+        header .cta {
+            background: #f80000;
+            padding: 15px 30px;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 5px;
+            margin-top: 20px;
+            animation: bounce 3s infinite;
+        }
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            color: #f80000;
+            margin-bottom: 20px;
+        }
+        .content-box {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            color: #f80000;
+            margin-top: 15px;
+        }
+        footer {
+            background: #101010;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: #f80000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Superman</h1>
+        <p>The Last Son of Krypton</p>
+        <button class="cta">Learn More</button>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Superman</h2>
+        <div class="content-box">
+            <div class="card">
+                <img src="https://example.com/superman-origin.jpg" alt="Superman's Origin">
+                <h3>Origin Story</h3>
+                <p>Learn about how Kal-El became the symbol of hope after arriving from Krypton.</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/superman-allies.jpg" alt="Superman's Allies">
+                <h3>Allies</h3>
+                <p>Discover the friends and allies who stand with Superman to protect Earth.</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/superman-enemies.jpg" alt="Superman's Enemies">
+                <h3>Enemies</h3>
+                <p>Meet the iconic villains who challenge Superman in his quest for justice.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Superman Universe. All rights reserved.</p>
+        <p>Follow us on <a href="#">Twitter</a>, <a href="#">Instagram</a>, and <a href="#">Facebook</a>.</p>
+    </footer>
+</body>
+</html>
